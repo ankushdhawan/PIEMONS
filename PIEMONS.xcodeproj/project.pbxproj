@@ -1,0 +1,514 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		33279F281F5CE7BDB18DEC24 /* Pods_PIEMONS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4B386510C13C56F3EEAE455 /* Pods_PIEMONS.framework */; };
+		FBDF17E627E2EAB40000CDC1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBDF17E527E2EAB40000CDC1 /* AppDelegate.swift */; };
+		FBDF17E827E2EAB40000CDC1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBDF17E727E2EAB40000CDC1 /* SceneDelegate.swift */; };
+		FBDF17EA27E2EAB40000CDC1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBDF17E927E2EAB40000CDC1 /* ViewController.swift */; };
+		FBDF17ED27E2EAB40000CDC1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FBDF17EB27E2EAB40000CDC1 /* Main.storyboard */; };
+		FBDF17EF27E2EAC00000CDC1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FBDF17EE27E2EAC00000CDC1 /* Assets.xcassets */; };
+		FBDF17F227E2EAC00000CDC1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FBDF17F027E2EAC00000CDC1 /* LaunchScreen.storyboard */; };
+		FBDF180127E2EEB70000CDC1 /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBDF17FB27E2EEB60000CDC1 /* UIViewExtension.swift */; };
+		FBDF180227E2EEB70000CDC1 /* LoginService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBDF17FD27E2EEB60000CDC1 /* LoginService.swift */; };
+		FBDF180727E2EED70000CDC1 /* UserInApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBDF180627E2EED70000CDC1 /* UserInApp.swift */; };
+		FBDF180A27E2F1B60000CDC1 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBDF180927E2F1B60000CDC1 /* CustomTextField.swift */; };
+		FBDF180C27E2FB930000CDC1 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBDF180B27E2FB930000CDC1 /* UIView+Extension.swift */; };
+		FBDF180E27E3342C0000CDC1 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBDF180D27E3342C0000CDC1 /* LoginViewController.swift */; };
+		FBDF181027E334470000CDC1 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBDF180F27E334460000CDC1 /* SignUpViewController.swift */; };
+		FBDF181227E335F00000CDC1 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBDF181127E335F00000CDC1 /* LoginViewModel.swift */; };
+		FBDF181427E341550000CDC1 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FBDF181327E341550000CDC1 /* GoogleService-Info.plist */; };
+		FBDF181627E347100000CDC1 /* SignupViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBDF181527E347100000CDC1 /* SignupViewModel.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		303348B8BC18F7A47CB5FA5E /* Pods-PIEMONS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PIEMONS.debug.xcconfig"; path = "Target Support Files/Pods-PIEMONS/Pods-PIEMONS.debug.xcconfig"; sourceTree = "<group>"; };
+		C4B386510C13C56F3EEAE455 /* Pods_PIEMONS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PIEMONS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE66235FC162733072129644 /* Pods-PIEMONS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PIEMONS.release.xcconfig"; path = "Target Support Files/Pods-PIEMONS/Pods-PIEMONS.release.xcconfig"; sourceTree = "<group>"; };
+		FBDF17E227E2EAB40000CDC1 /* PIEMONS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PIEMONS.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FBDF17E527E2EAB40000CDC1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FBDF17E727E2EAB40000CDC1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		FBDF17E927E2EAB40000CDC1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		FBDF17EC27E2EAB40000CDC1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FBDF17EE27E2EAC00000CDC1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FBDF17F127E2EAC00000CDC1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FBDF17F327E2EAC00000CDC1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FBDF17FB27E2EEB60000CDC1 /* UIViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
+		FBDF17FD27E2EEB60000CDC1 /* LoginService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginService.swift; sourceTree = "<group>"; };
+		FBDF180627E2EED70000CDC1 /* UserInApp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserInApp.swift; sourceTree = "<group>"; };
+		FBDF180927E2F1B60000CDC1 /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
+		FBDF180B27E2FB930000CDC1 /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
+		FBDF180D27E3342C0000CDC1 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		FBDF180F27E334460000CDC1 /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		FBDF181127E335F00000CDC1 /* LoginViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		FBDF181327E341550000CDC1 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		FBDF181527E347100000CDC1 /* SignupViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupViewModel.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FBDF17DF27E2EAB40000CDC1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				33279F281F5CE7BDB18DEC24 /* Pods_PIEMONS.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9BACAAE6EDAE1E766C3F04C1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C4B386510C13C56F3EEAE455 /* Pods_PIEMONS.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FB173F7D6FBE9FBF6B671806 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				303348B8BC18F7A47CB5FA5E /* Pods-PIEMONS.debug.xcconfig */,
+				CE66235FC162733072129644 /* Pods-PIEMONS.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		FBDF17D927E2EAB40000CDC1 = {
+			isa = PBXGroup;
+			children = (
+				FBDF17E427E2EAB40000CDC1 /* PIEMONS */,
+				FBDF17E327E2EAB40000CDC1 /* Products */,
+				FB173F7D6FBE9FBF6B671806 /* Pods */,
+				9BACAAE6EDAE1E766C3F04C1 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		FBDF17E327E2EAB40000CDC1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FBDF17E227E2EAB40000CDC1 /* PIEMONS.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FBDF17E427E2EAB40000CDC1 /* PIEMONS */ = {
+			isa = PBXGroup;
+			children = (
+				FBDF181327E341550000CDC1 /* GoogleService-Info.plist */,
+				FBDF180527E2EED70000CDC1 /* Model */,
+				FBDF17F927E2EEB60000CDC1 /* Ultility */,
+				FBDF17E527E2EAB40000CDC1 /* AppDelegate.swift */,
+				FBDF180D27E3342C0000CDC1 /* LoginViewController.swift */,
+				FBDF180F27E334460000CDC1 /* SignUpViewController.swift */,
+				FBDF181527E347100000CDC1 /* SignupViewModel.swift */,
+				FBDF181127E335F00000CDC1 /* LoginViewModel.swift */,
+				FBDF17E727E2EAB40000CDC1 /* SceneDelegate.swift */,
+				FBDF17E927E2EAB40000CDC1 /* ViewController.swift */,
+				FBDF17EB27E2EAB40000CDC1 /* Main.storyboard */,
+				FBDF17EE27E2EAC00000CDC1 /* Assets.xcassets */,
+				FBDF17F027E2EAC00000CDC1 /* LaunchScreen.storyboard */,
+				FBDF17F327E2EAC00000CDC1 /* Info.plist */,
+			);
+			path = PIEMONS;
+			sourceTree = "<group>";
+		};
+		FBDF17F927E2EEB60000CDC1 /* Ultility */ = {
+			isa = PBXGroup;
+			children = (
+				FBDF180827E2F18F0000CDC1 /* CusromTextField */,
+				FBDF17FA27E2EEB60000CDC1 /* Extension */,
+				FBDF17FC27E2EEB60000CDC1 /* LoginService */,
+			);
+			path = Ultility;
+			sourceTree = "<group>";
+		};
+		FBDF17FA27E2EEB60000CDC1 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				FBDF17FB27E2EEB60000CDC1 /* UIViewExtension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		FBDF17FC27E2EEB60000CDC1 /* LoginService */ = {
+			isa = PBXGroup;
+			children = (
+				FBDF17FD27E2EEB60000CDC1 /* LoginService.swift */,
+			);
+			path = LoginService;
+			sourceTree = "<group>";
+		};
+		FBDF180527E2EED70000CDC1 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FBDF180627E2EED70000CDC1 /* UserInApp.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		FBDF180827E2F18F0000CDC1 /* CusromTextField */ = {
+			isa = PBXGroup;
+			children = (
+				FBDF180927E2F1B60000CDC1 /* CustomTextField.swift */,
+				FBDF180B27E2FB930000CDC1 /* UIView+Extension.swift */,
+			);
+			path = CusromTextField;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FBDF17E127E2EAB40000CDC1 /* PIEMONS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FBDF17F627E2EAC00000CDC1 /* Build configuration list for PBXNativeTarget "PIEMONS" */;
+			buildPhases = (
+				0A93896F3946C81DFACFBF31 /* [CP] Check Pods Manifest.lock */,
+				FBDF17DE27E2EAB40000CDC1 /* Sources */,
+				FBDF17DF27E2EAB40000CDC1 /* Frameworks */,
+				FBDF17E027E2EAB40000CDC1 /* Resources */,
+				65B282CDA6F0D5597FF49AC7 /* [CP] Embed Pods Frameworks */,
+				925A9BA619ED448F31116606 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PIEMONS;
+			productName = PIEMONS;
+			productReference = FBDF17E227E2EAB40000CDC1 /* PIEMONS.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FBDF17DA27E2EAB40000CDC1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					FBDF17E127E2EAB40000CDC1 = {
+						CreatedOnToolsVersion = 12.5;
+					};
+				};
+			};
+			buildConfigurationList = FBDF17DD27E2EAB40000CDC1 /* Build configuration list for PBXProject "PIEMONS" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FBDF17D927E2EAB40000CDC1;
+			productRefGroup = FBDF17E327E2EAB40000CDC1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FBDF17E127E2EAB40000CDC1 /* PIEMONS */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FBDF17E027E2EAB40000CDC1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FBDF17F227E2EAC00000CDC1 /* LaunchScreen.storyboard in Resources */,
+				FBDF181427E341550000CDC1 /* GoogleService-Info.plist in Resources */,
+				FBDF17EF27E2EAC00000CDC1 /* Assets.xcassets in Resources */,
+				FBDF17ED27E2EAB40000CDC1 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0A93896F3946C81DFACFBF31 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PIEMONS-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		65B282CDA6F0D5597FF49AC7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PIEMONS/Pods-PIEMONS-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PIEMONS/Pods-PIEMONS-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PIEMONS/Pods-PIEMONS-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		925A9BA619ED448F31116606 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PIEMONS/Pods-PIEMONS-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PIEMONS/Pods-PIEMONS-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PIEMONS/Pods-PIEMONS-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FBDF17DE27E2EAB40000CDC1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FBDF180E27E3342C0000CDC1 /* LoginViewController.swift in Sources */,
+				FBDF180A27E2F1B60000CDC1 /* CustomTextField.swift in Sources */,
+				FBDF181227E335F00000CDC1 /* LoginViewModel.swift in Sources */,
+				FBDF17EA27E2EAB40000CDC1 /* ViewController.swift in Sources */,
+				FBDF180C27E2FB930000CDC1 /* UIView+Extension.swift in Sources */,
+				FBDF181027E334470000CDC1 /* SignUpViewController.swift in Sources */,
+				FBDF181627E347100000CDC1 /* SignupViewModel.swift in Sources */,
+				FBDF17E627E2EAB40000CDC1 /* AppDelegate.swift in Sources */,
+				FBDF180227E2EEB70000CDC1 /* LoginService.swift in Sources */,
+				FBDF180127E2EEB70000CDC1 /* UIViewExtension.swift in Sources */,
+				FBDF17E827E2EAB40000CDC1 /* SceneDelegate.swift in Sources */,
+				FBDF180727E2EED70000CDC1 /* UserInApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		FBDF17EB27E2EAB40000CDC1 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FBDF17EC27E2EAB40000CDC1 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FBDF17F027E2EAC00000CDC1 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FBDF17F127E2EAC00000CDC1 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FBDF17F427E2EAC00000CDC1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FBDF17F527E2EAC00000CDC1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FBDF17F727E2EAC00000CDC1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 303348B8BC18F7A47CB5FA5E /* Pods-PIEMONS.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SP9U9H7T65;
+				INFOPLIST_FILE = PIEMONS/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.mobile.PIEMONS;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FBDF17F827E2EAC00000CDC1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CE66235FC162733072129644 /* Pods-PIEMONS.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SP9U9H7T65;
+				INFOPLIST_FILE = PIEMONS/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.mobile.PIEMONS;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FBDF17DD27E2EAB40000CDC1 /* Build configuration list for PBXProject "PIEMONS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FBDF17F427E2EAC00000CDC1 /* Debug */,
+				FBDF17F527E2EAC00000CDC1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FBDF17F627E2EAC00000CDC1 /* Build configuration list for PBXNativeTarget "PIEMONS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FBDF17F727E2EAC00000CDC1 /* Debug */,
+				FBDF17F827E2EAC00000CDC1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FBDF17DA27E2EAB40000CDC1 /* Project object */;
+}
