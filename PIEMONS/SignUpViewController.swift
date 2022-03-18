@@ -33,8 +33,15 @@ class SignUpViewController: UIViewController {
 
     }
     
+    func isValidEmail(_ email: String) -> Bool {
+        let emailRegEx = "[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,64}"
+
+        let emailPred = NSPredicate(format:"SELF MATCHES %@", emailRegEx)
+        return emailPred.evaluate(with: email)
+    }
+    
     @IBAction func signUpButtonTapped(_ sender: Any) {
-        //self.performSegue(withIdentifier: "navigateIntoCameraScreen", sender: nil)
+//        self.performSegue(withIdentifier: "navigateIntoCameraScreen", sender: nil)
         viewModel.SignUp(username: emailTextfield.text, password: passwordTextfield.text)
 
     }
@@ -52,7 +59,5 @@ extension SignUpViewController:SignUpResultProtocol {
     func error(error: Error) {
         
     }
-    
-    
-    
+   
 }

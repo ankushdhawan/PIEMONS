@@ -21,7 +21,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         ANLoader.activityColor = .darkGray
         ANLoader.activityBackgroundColor = .clear
         ANLoader.activityTextColor = .clear
-        ANLoader.showLoading("Loading", disableUI: true)
+      //  ANLoader.showLoading("Loading", disableUI: true)
        // ANLoader.hide()
 
         FirebaseApp.configure()
