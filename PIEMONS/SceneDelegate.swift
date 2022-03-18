@@ -16,7 +16,10 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // Use this method to optionally configure and attach the UIWindow `window` to the provided UIWindowScene `scene`.
         // If using a storyboard, the `window` property will automatically be initialized and attached to the scene.
         // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
-        guard let _ = (scene as? UIWindowScene) else { return }
+        guard let windowScene = (scene as? UIWindowScene) else { return }
+        self.setRootViewController(scene: windowScene)
+
+
     }
 
     func sceneDidDisconnect(_ scene: UIScene) {
@@ -46,7 +49,35 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // Use this method to save data, release shared resources, and store enough scene-specific state information
         // to restore the scene back to its current state.
     }
-
+   
+        func userLoggedIn() -> Bool{
+            let token = UserDefaultHelper.userToken
+            if token != nil{
+                return true
+            }
+            return false
+        }
+        
+        
+        func setRootViewController(scene: UIWindowScene){
+            window = UIWindow(windowScene: scene)
+            if userLoggedIn() {
+                let viewController = UIStoryboard(name: "Camera", bundle: nil).instantiateViewController(withIdentifier: "cameraNavigationController")
+                if let window = self.window {
+                    window.rootViewController = viewController
+                    window.makeKeyAndVisible()
+                }
+            }else{
+                let viewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "signupNavigationController")
+                if let window = self.window {
+                    window.rootViewController = viewController
+                    window.makeKeyAndVisible()
+                }
+            
+            
+            
+            
+        }
 
 }
-
+}

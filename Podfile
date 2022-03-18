@@ -11,6 +11,8 @@ pod 'FirebaseUI/Auth'
 #pod 'SwiftLoader', '1.0.0'
 pod 'Firebase'
 pod 'ANLoader', :git => 'https://github.com/ANSCoder/ANLoader.git'
+pod 'IQKeyboardManagerSwift'
+
 
 
 end

@@ -8,13 +8,14 @@
 
 import Foundation
 import Firebase
+import ANLoader
 
-protocol LoginFunctionProtocol {
+protocol LoginFunctionProtocol:AnyObject {
   
   func login(username: String?, password: String?)
 }
 
-protocol LoginResultProtocol: class {
+protocol LoginResultProtocol: AnyObject {
   func success(user: User?)
   func error(error: Error)
 }
@@ -29,11 +30,15 @@ class LoginViewModel:LoginFunctionProtocol {
     if let username = username, let password = password {
         Auth.auth().signIn(withEmail: username, password: password) { [weak self] authResult, error in
           guard let strongSelf = self else { return }
-          //delegate?.success(user: user, type: type)
-
-          // ...
+            if let user = authResult?.user {
+                print(user)
+                self?.delegate?.success(user: user)
+            } else {
+                self?.delegate?.error(error: error!)
+            }
         }
     } else {
+        
       //delegate?.error(error: NSError(domain: "Value is nil", code: 1, userInfo:nil), type: type)
     }
   }

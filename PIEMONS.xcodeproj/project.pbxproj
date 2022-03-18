@@ -10,6 +10,10 @@
 		103912C227E45B1400A3780F /* UploadPictureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 103912C127E45B1400A3780F /* UploadPictureViewController.swift */; };
 		103912C427E45C8C00A3780F /* ImageCaptureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 103912C327E45C8C00A3780F /* ImageCaptureViewController.swift */; };
 		103912C627E4601000A3780F /* UITextfield.swift in Sources */ = {isa = PBXBuildFile; fileRef = 103912C527E4600F00A3780F /* UITextfield.swift */; };
+		103912C827E4640000A3780F /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 103912C727E4640000A3780F /* StringExtension.swift */; };
+		103912CB27E4672B00A3780F /* AlertUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 103912CA27E4672B00A3780F /* AlertUtility.swift */; };
+		105ED38827E4850B008EBDCD /* UserDefaultHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 105ED38727E4850B008EBDCD /* UserDefaultHelper.swift */; };
+		105ED38A27E488B1008EBDCD /* Camera.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 105ED38927E488B1008EBDCD /* Camera.storyboard */; };
 		33279F281F5CE7BDB18DEC24 /* Pods_PIEMONS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4B386510C13C56F3EEAE455 /* Pods_PIEMONS.framework */; };
 		FBDF17E627E2EAB40000CDC1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBDF17E527E2EAB40000CDC1 /* AppDelegate.swift */; };
 		FBDF17E827E2EAB40000CDC1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBDF17E727E2EAB40000CDC1 /* SceneDelegate.swift */; };
@@ -33,6 +37,10 @@
 		103912C127E45B1400A3780F /* UploadPictureViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UploadPictureViewController.swift; sourceTree = "<group>"; };
 		103912C327E45C8C00A3780F /* ImageCaptureViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageCaptureViewController.swift; sourceTree = "<group>"; };
 		103912C527E4600F00A3780F /* UITextfield.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITextfield.swift; sourceTree = "<group>"; };
+		103912C727E4640000A3780F /* StringExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
+		103912CA27E4672B00A3780F /* AlertUtility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertUtility.swift; sourceTree = "<group>"; };
+		105ED38727E4850B008EBDCD /* UserDefaultHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDefaultHelper.swift; sourceTree = "<group>"; };
+		105ED38927E488B1008EBDCD /* Camera.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Camera.storyboard; sourceTree = "<group>"; };
 		303348B8BC18F7A47CB5FA5E /* Pods-PIEMONS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PIEMONS.debug.xcconfig"; path = "Target Support Files/Pods-PIEMONS/Pods-PIEMONS.debug.xcconfig"; sourceTree = "<group>"; };
 		C4B386510C13C56F3EEAE455 /* Pods_PIEMONS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PIEMONS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE66235FC162733072129644 /* Pods-PIEMONS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PIEMONS.release.xcconfig"; path = "Target Support Files/Pods-PIEMONS/Pods-PIEMONS.release.xcconfig"; sourceTree = "<group>"; };
@@ -122,6 +130,7 @@
 				FBDF17EE27E2EAC00000CDC1 /* Assets.xcassets */,
 				FBDF17F027E2EAC00000CDC1 /* LaunchScreen.storyboard */,
 				FBDF17F327E2EAC00000CDC1 /* Info.plist */,
+				105ED38927E488B1008EBDCD /* Camera.storyboard */,
 			);
 			path = PIEMONS;
 			sourceTree = "<group>";
@@ -130,6 +139,8 @@
 			isa = PBXGroup;
 			children = (
 				FBDF17FC27E2EEB60000CDC1 /* LoginService */,
+				103912CA27E4672B00A3780F /* AlertUtility.swift */,
+				105ED38727E4850B008EBDCD /* UserDefaultHelper.swift */,
 			);
 			path = Ultility;
 			sourceTree = "<group>";
@@ -139,6 +150,7 @@
 			children = (
 				FBDF17FB27E2EEB60000CDC1 /* UIViewExtension.swift */,
 				103912C527E4600F00A3780F /* UITextfield.swift */,
+				103912C727E4640000A3780F /* StringExtension.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -234,6 +246,7 @@
 				FBDF181427E341550000CDC1 /* GoogleService-Info.plist in Resources */,
 				FBDF17EF27E2EAC00000CDC1 /* Assets.xcassets in Resources */,
 				FBDF17ED27E2EAB40000CDC1 /* Main.storyboard in Resources */,
+				105ED38A27E488B1008EBDCD /* Camera.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -307,10 +320,13 @@
 				FBDF180A27E2F1B60000CDC1 /* CustomTextField.swift in Sources */,
 				103912C227E45B1400A3780F /* UploadPictureViewController.swift in Sources */,
 				FBDF181227E335F00000CDC1 /* LoginViewModel.swift in Sources */,
+				103912C827E4640000A3780F /* StringExtension.swift in Sources */,
+				103912CB27E4672B00A3780F /* AlertUtility.swift in Sources */,
 				103912C427E45C8C00A3780F /* ImageCaptureViewController.swift in Sources */,
 				103912C627E4601000A3780F /* UITextfield.swift in Sources */,
 				FBDF17EA27E2EAB40000CDC1 /* ViewController.swift in Sources */,
 				FBDF180C27E2FB930000CDC1 /* UIView+Extension.swift in Sources */,
+				105ED38827E4850B008EBDCD /* UserDefaultHelper.swift in Sources */,
 				FBDF181027E334470000CDC1 /* SignUpViewController.swift in Sources */,
 				FBDF181627E347100000CDC1 /* SignupViewModel.swift in Sources */,
 				FBDF17E627E2EAB40000CDC1 /* AppDelegate.swift in Sources */,

@@ -95,7 +95,7 @@ extension UploadPictureViewController: AVCapturePhotoCaptureDelegate {
       return
     }
       if let image = UIImage(data: photoData){
-          self.navigationController?.popViewController(animated: true)
+          self.dismiss(animated: true)
           delegate.getImage(selectedImage: image)
           
       }

@@ -7,6 +7,8 @@
 
 import UIKit
 import Firebase
+import ANLoader
+
 
 class SignUpViewController: UIViewController {
 
@@ -33,16 +35,27 @@ class SignUpViewController: UIViewController {
 
     }
     
-    func isValidEmail(_ email: String) -> Bool {
-        let emailRegEx = "[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,64}"
-
-        let emailPred = NSPredicate(format:"SELF MATCHES %@", emailRegEx)
-        return emailPred.evaluate(with: email)
+    fileprivate func formValidate() ->Bool {
+        var message:String?
+         if CommonUtilities.EmailValidation.isValidEmail(email: emailTextfield.text!) == false{
+            message = "Please enter valid email."
+        }else if (passwordTextfield.text?.trimSpace().isEmpty)!{
+            message = "Please enter  password"
+        }else{
+            return true
+        }
+        if message != nil{
+            AlertUtility.showAlert(self, title: message)
+        }
+        return false
     }
     
     @IBAction func signUpButtonTapped(_ sender: Any) {
+        view.endEditing(true)
 //        self.performSegue(withIdentifier: "navigateIntoCameraScreen", sender: nil)
-        viewModel.SignUp(username: emailTextfield.text, password: passwordTextfield.text)
+        if formValidate(){
+            viewModel.SignUp(username: emailTextfield.text, password: passwordTextfield.text)
+        }
 
     }
     
@@ -53,11 +66,15 @@ class SignUpViewController: UIViewController {
 }
 extension SignUpViewController:SignUpResultProtocol {
     func success(user: User?) {
-        
+         ANLoader.hide()
+        AlertUtility.showAlert(self, title: "Congratulation,your account has been successfully created.", cancelButton: "OK", buttons: nil, actions: { (alertAction, index) in
+            self.navigationController?.popViewController(animated: true)
+        })
     }
     
     func error(error: Error) {
-        
+        ANLoader.hide()
+        AlertUtility.showAlert(self, title: "Error", message: error.localizedDescription)
     }
    
 }

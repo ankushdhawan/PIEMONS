@@ -19,7 +19,7 @@ enum LoginType: String {
   }
 }
 
-struct User {
+struct LocalUser {
   var username: String?
   var password: String?
   var token: String?
