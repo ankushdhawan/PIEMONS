@@ -19,6 +19,7 @@ class LoginViewController: UIViewController {
         super.viewDidLoad()
         viewModel = LoginViewModel()
         viewModel.delegate = self
+        print(MotionManager.shared.accelerometer())
 
     }
 
@@ -51,6 +52,8 @@ class LoginViewController: UIViewController {
     
     @IBAction func loginButtonTapped(_ sender: Any) {
         view.endEditing(true)
+        print(MotionManager.shared.gyroscope())
+
         if formValidate(){
           viewModel.login(username: emailTextfield.text, password: passwordTextfield.text)
         }
@@ -59,7 +62,13 @@ class LoginViewController: UIViewController {
     @IBAction func signUpButtonTapped(_ sender: Any) {
         self.performSegue(withIdentifier: "navigateToSignUpScreen", sender: nil)
     }
-    
+}
+
+extension LoginViewController: UITextFieldDelegate {
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.resignFirstResponder() // dismiss keyboard
+        return true
+    }
 }
 extension LoginViewController:LoginResultProtocol {
     func success(user: User?) {

@@ -10,6 +10,7 @@ import UIKit
 import Firebase
 import FirebaseCore
 import ANLoader
+import IQKeyboardManagerSwift
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -23,7 +24,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         ANLoader.activityColor = .darkGray
         ANLoader.activityBackgroundColor = .clear
         ANLoader.activityTextColor = .clear
+        IQKeyboardManager.shared.enable = true
         FirebaseApp.configure()
+        print(MotionManager.shared.accelerometer())
+        print(MotionManager.shared.gyroscope())
+        print(MotionManager.shared.Magnetometer())
+        MyLocationManager.shared.getLatLong()
+        
         return true
     }
 

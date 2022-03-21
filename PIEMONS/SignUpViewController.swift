@@ -78,3 +78,9 @@ extension SignUpViewController:SignUpResultProtocol {
     }
    
 }
+extension SignUpViewController: UITextFieldDelegate {
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.resignFirstResponder() // dismiss keyboard
+        return true
+    }
+}

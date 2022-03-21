@@ -13,6 +13,8 @@ pod 'Firebase'
 pod 'ANLoader', :git => 'https://github.com/ANSCoder/ANLoader.git'
 pod 'IQKeyboardManagerSwift'
 
+#pod 'MotionKit'
+
 
 
 end

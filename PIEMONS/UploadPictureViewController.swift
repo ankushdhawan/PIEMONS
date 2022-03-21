@@ -80,6 +80,9 @@ class UploadPictureViewController: UIViewController {
     }
     
     
+    @IBAction func crossButtonTapped(_ sender: Any) {
+        self.dismiss(animated: true, completion: nil)
+    }
     @IBAction func clickImageButtonTapped(_ sender: Any) {
         capturePhoto()
     }
@@ -87,6 +90,8 @@ class UploadPictureViewController: UIViewController {
 }
 extension UploadPictureViewController: AVCapturePhotoCaptureDelegate {
   func photoOutput(_ output: AVCapturePhotoOutput, didFinishProcessingPhoto photo: AVCapturePhoto, error: Error?) {
+      self.dismiss(animated: true)
+
     if let error = error {
       print(error.localizedDescription)
       return
@@ -95,7 +100,6 @@ extension UploadPictureViewController: AVCapturePhotoCaptureDelegate {
       return
     }
       if let image = UIImage(data: photoData){
-          self.dismiss(animated: true)
           delegate.getImage(selectedImage: image)
           
       }

@@ -14,6 +14,11 @@
 		103912CB27E4672B00A3780F /* AlertUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 103912CA27E4672B00A3780F /* AlertUtility.swift */; };
 		105ED38827E4850B008EBDCD /* UserDefaultHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 105ED38727E4850B008EBDCD /* UserDefaultHelper.swift */; };
 		105ED38A27E488B1008EBDCD /* Camera.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 105ED38927E488B1008EBDCD /* Camera.storyboard */; };
+		105ED39327E5C283008EBDCD /* ImageCaptureWithOptionsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 105ED39227E5C283008EBDCD /* ImageCaptureWithOptionsTableViewCell.swift */; };
+		105ED39527E5E783008EBDCD /* DisasterTypesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 105ED39427E5E783008EBDCD /* DisasterTypesModel.swift */; };
+		105ED39727E60F66008EBDCD /* MyLocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 105ED39627E60F65008EBDCD /* MyLocationManager.swift */; };
+		10CC447027E63DF7003A09E6 /* MotionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10CC446F27E63DF7003A09E6 /* MotionManager.swift */; };
+		10CC447227E63EF9003A09E6 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10CC447127E63EF9003A09E6 /* CoreMotion.framework */; };
 		33279F281F5CE7BDB18DEC24 /* Pods_PIEMONS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4B386510C13C56F3EEAE455 /* Pods_PIEMONS.framework */; };
 		FBDF17E627E2EAB40000CDC1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBDF17E527E2EAB40000CDC1 /* AppDelegate.swift */; };
 		FBDF17E827E2EAB40000CDC1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBDF17E727E2EAB40000CDC1 /* SceneDelegate.swift */; };
@@ -41,6 +46,11 @@
 		103912CA27E4672B00A3780F /* AlertUtility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertUtility.swift; sourceTree = "<group>"; };
 		105ED38727E4850B008EBDCD /* UserDefaultHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDefaultHelper.swift; sourceTree = "<group>"; };
 		105ED38927E488B1008EBDCD /* Camera.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Camera.storyboard; sourceTree = "<group>"; };
+		105ED39227E5C283008EBDCD /* ImageCaptureWithOptionsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCaptureWithOptionsTableViewCell.swift; sourceTree = "<group>"; };
+		105ED39427E5E783008EBDCD /* DisasterTypesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisasterTypesModel.swift; sourceTree = "<group>"; };
+		105ED39627E60F65008EBDCD /* MyLocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyLocationManager.swift; sourceTree = "<group>"; };
+		10CC446F27E63DF7003A09E6 /* MotionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotionManager.swift; sourceTree = "<group>"; };
+		10CC447127E63EF9003A09E6 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
 		303348B8BC18F7A47CB5FA5E /* Pods-PIEMONS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PIEMONS.debug.xcconfig"; path = "Target Support Files/Pods-PIEMONS/Pods-PIEMONS.debug.xcconfig"; sourceTree = "<group>"; };
 		C4B386510C13C56F3EEAE455 /* Pods_PIEMONS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PIEMONS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE66235FC162733072129644 /* Pods-PIEMONS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PIEMONS.release.xcconfig"; path = "Target Support Files/Pods-PIEMONS/Pods-PIEMONS.release.xcconfig"; sourceTree = "<group>"; };
@@ -69,6 +79,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				10CC447227E63EF9003A09E6 /* CoreMotion.framework in Frameworks */,
 				33279F281F5CE7BDB18DEC24 /* Pods_PIEMONS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -76,9 +87,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		105ED39127E5C246008EBDCD /* TableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				105ED39227E5C283008EBDCD /* ImageCaptureWithOptionsTableViewCell.swift */,
+			);
+			path = TableViewCell;
+			sourceTree = "<group>";
+		};
 		9BACAAE6EDAE1E766C3F04C1 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				10CC447127E63EF9003A09E6 /* CoreMotion.framework */,
 				C4B386510C13C56F3EEAE455 /* Pods_PIEMONS.framework */,
 			);
 			name = Frameworks;
@@ -115,14 +135,17 @@
 			isa = PBXGroup;
 			children = (
 				FBDF181327E341550000CDC1 /* GoogleService-Info.plist */,
+				105ED39127E5C246008EBDCD /* TableViewCell */,
 				FBDF180527E2EED70000CDC1 /* Model */,
 				FBDF17F927E2EEB60000CDC1 /* Ultility */,
 				FBDF17E527E2EAB40000CDC1 /* AppDelegate.swift */,
 				FBDF180D27E3342C0000CDC1 /* LoginViewController.swift */,
+				10CC446F27E63DF7003A09E6 /* MotionManager.swift */,
 				FBDF180F27E334460000CDC1 /* SignUpViewController.swift */,
 				FBDF181527E347100000CDC1 /* SignupViewModel.swift */,
 				103912C127E45B1400A3780F /* UploadPictureViewController.swift */,
 				103912C327E45C8C00A3780F /* ImageCaptureViewController.swift */,
+				105ED39627E60F65008EBDCD /* MyLocationManager.swift */,
 				FBDF181127E335F00000CDC1 /* LoginViewModel.swift */,
 				FBDF17E727E2EAB40000CDC1 /* SceneDelegate.swift */,
 				FBDF17E927E2EAB40000CDC1 /* ViewController.swift */,
@@ -169,6 +192,7 @@
 				FBDF180627E2EED70000CDC1 /* UserInApp.swift */,
 				FBDF180827E2F18F0000CDC1 /* CusromTextField */,
 				FBDF17FA27E2EEB60000CDC1 /* Extension */,
+				105ED39427E5E783008EBDCD /* DisasterTypesModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -321,16 +345,20 @@
 				103912C227E45B1400A3780F /* UploadPictureViewController.swift in Sources */,
 				FBDF181227E335F00000CDC1 /* LoginViewModel.swift in Sources */,
 				103912C827E4640000A3780F /* StringExtension.swift in Sources */,
+				10CC447027E63DF7003A09E6 /* MotionManager.swift in Sources */,
 				103912CB27E4672B00A3780F /* AlertUtility.swift in Sources */,
 				103912C427E45C8C00A3780F /* ImageCaptureViewController.swift in Sources */,
+				105ED39727E60F66008EBDCD /* MyLocationManager.swift in Sources */,
 				103912C627E4601000A3780F /* UITextfield.swift in Sources */,
 				FBDF17EA27E2EAB40000CDC1 /* ViewController.swift in Sources */,
 				FBDF180C27E2FB930000CDC1 /* UIView+Extension.swift in Sources */,
+				105ED39527E5E783008EBDCD /* DisasterTypesModel.swift in Sources */,
 				105ED38827E4850B008EBDCD /* UserDefaultHelper.swift in Sources */,
 				FBDF181027E334470000CDC1 /* SignUpViewController.swift in Sources */,
 				FBDF181627E347100000CDC1 /* SignupViewModel.swift in Sources */,
 				FBDF17E627E2EAB40000CDC1 /* AppDelegate.swift in Sources */,
 				FBDF180227E2EEB70000CDC1 /* LoginService.swift in Sources */,
+				105ED39327E5C283008EBDCD /* ImageCaptureWithOptionsTableViewCell.swift in Sources */,
 				FBDF180127E2EEB70000CDC1 /* UIViewExtension.swift in Sources */,
 				FBDF17E827E2EAB40000CDC1 /* SceneDelegate.swift in Sources */,
 				FBDF180727E2EED70000CDC1 /* UserInApp.swift in Sources */,
@@ -481,15 +509,18 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = HHPJFZDW64;
 				INFOPLIST_FILE = PIEMONS/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.mobile.PIEMONS;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -501,15 +532,18 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = SP9U9H7T65;
+				DEVELOPMENT_TEAM = HHPJFZDW64;
 				INFOPLIST_FILE = PIEMONS/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.mobile.PIEMONS;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
